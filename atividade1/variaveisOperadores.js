@@ -25,6 +25,12 @@ console.log(
   `Resultado de 'first && second;' entre ${first} e ${second} é ${shortCircuitAnd}`,
 );
 
+// Ternary Operator
+const ternary = first === 42 ? first : second;
+console.log(
+  `Resultado de 'first === 42 ? first : second;' onde first=${first} e second=${second} é ${ternary}`,
+);
+
 // Nullish Coescaling
 const nullishCoescaling = undefined ?? first;
 console.log(
