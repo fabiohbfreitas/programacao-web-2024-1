@@ -10,7 +10,7 @@ const sub = first - second;
 console.log(`Resultado da subtração (-) entre ${first} e ${second} é ${sub}`);
 const mult = first * second;
 console.log(
-    `Resultado da multiplicação (*) entre ${first} e ${second} é ${mult}`,
+  `Resultado da multiplicação (*) entre ${first} e ${second} é ${mult}`,
 );
 const div = first / second;
 console.log(`Resultado da divisão (/) entre ${first} e ${second} é ${div}`);
@@ -18,19 +18,19 @@ console.log(`Resultado da divisão (/) entre ${first} e ${second} é ${div}`);
 // Short Circuit
 const shortCircuitOr = first || second;
 console.log(
-    `Resultado de 'first || second;' entre ${first} e ${second} é ${shortCircuitOr}`,
+  `Resultado de 'first || second;' entre ${first} e ${second} é ${shortCircuitOr}`,
 );
 const shortCircuitAnd = first && second;
 console.log(
-    `Resultado de 'first && second;' entre ${first} e ${second} é ${shortCircuitAnd}`,
+  `Resultado de 'first && second;' entre ${first} e ${second} é ${shortCircuitAnd}`,
 );
 
 // Nullish Coescaling
 const nullishCoescaling = undefined ?? first;
 console.log(
-    `Resultado de 'undefined ?? first' onde first=${first} é ${nullishCoescaling}`,
+  `Resultado de 'undefined ?? first' onde first=${first} é ${nullishCoescaling}`,
 );
 const nullishCoescaling2 = 1 ?? first;
 console.log(
-    `Resultado de '1 ?? first' onde first=${first} é ${nullishCoescaling2}`,
+  `Resultado de '1 ?? first' onde first=${first} é ${nullishCoescaling2}`,
 );

@@ -1,2 +1,2 @@
 format:
-	bunx @biomejs/biome format ./atividade1 --write
+	bunx @biomejs/biome format . --write
