@@ -1,4 +1,4 @@
-let matriz = [
+const matriz = [
   [1, 2],
   [3, 4],
   [5, 6],
@@ -9,7 +9,7 @@ console.log(matriz);
 function transporMatriz(m) {
   const linhas = m.length;
   const colunas = m.at(0).length;
-  //   console.log({ linhas, colunas });
+  //console.log({ linhas, colunas });
 
   const transposta = [];
 
@@ -21,7 +21,7 @@ function transporMatriz(m) {
     }
     transposta.push(nova_linha);
   }
-  //   console.log(transposta);
+  //console.log(transposta);
 
   return transposta;
 }
