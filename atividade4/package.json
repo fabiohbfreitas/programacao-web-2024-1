@@ -2,7 +2,7 @@
   "name": "atividade4",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.mjs",
   "type": "module",
   "scripts": {
     "dev": "node --watch index.mjs",
