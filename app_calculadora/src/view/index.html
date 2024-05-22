@@ -1,15 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            {{#error}}
+            <div class="alert alert-danger m-2" role="alert">
+                {{error}}
+            </div>
+            {{/error}}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
-</head>
+            <h1>Calculadora</h1>
+            <form action="/resultado" method="post">
+                <div class="mb-3 mt-3">
+                    <label for="v1" class="form-label">Valor 1:</label>
+                    <input required type="number" value="{{v1}}" class="form-control" id="v1" name="v1">
+                </div>
 
-<body>
-    {{>test}}
-</body>
+                <div class="mb-3 mt-3">
+                    <label for="op" class="form-label">Operação:</label>
+                    <select required name="op" id="oop">
+                        <option value="+">+</option>
+                        <option value="-">-</option>
+                        <option value="*">*</option>
+                        <option value="/">/</option>
+                        <option value="%">%</option>
+                    </select>
 
-</html>
+                    <div class="mb-3 mt-3">
+                        <label for="v2" class="form-label">Valor 2:</label>
+                        <input required type="number" value="{{v2}}" class="form-control" id="v2" name="v2">
+                    </div>
+
+                    <input type="submit" value="Calcular">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{{>footer}}

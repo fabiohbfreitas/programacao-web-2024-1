@@ -1,15 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resultado</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
+{{>header}}
+<div class="container">
+    <div class="row">
+        <div class="col-12 text-center p-2">
+            <a href="/" class="mt-3">Voltar</a>
+            <p class="m-5">O resultado de <strong>{{op}}</strong> entre {{v1}} e {{v2}} é <strong>{{result}}</strong>.
+            </p>
+        </div>
+    </div>
+</div>
+{{>footer}}
